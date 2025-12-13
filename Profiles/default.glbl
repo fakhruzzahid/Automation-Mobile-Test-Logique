@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>default</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description>App Package Name</description>
+      <initValue>'id.valuemax.customer.staging'</initValue>
+      <name>APP_PACKAGE</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>App Activity</description>
+      <initValue>'id.valuemax.customer.MainActivity'</initValue>
+      <name>APP_ACTIVITY</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>APK File Path</description>
+      <initValue>'apk/gvm-staging.apk'</initValue>
+      <name>APK_PATH</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Device Name</description>
+      <initValue>'emulator-5554'</initValue>
+      <name>DEVICE_NAME</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Platform Version</description>
+      <initValue>'13.0'</initValue>
+      <name>PLATFORM_VERSION</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Test Email</description>
+      <initValue>'fakhruzzahidw@gmail.com'</initValue>
+      <name>TEST_EMAIL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Test Password</description>
+      <initValue>'Spasi2kali'</initValue>
+      <name>TEST_PASSWORD</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Test Phone Number</description>
+      <initValue>'01335990344'</initValue>
+      <name>TEST_PHONE</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Test Full Name</description>
+      <initValue>'Fakhruzzahid Test'</initValue>
+      <name>TEST_FULLNAME</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Default Timeout (seconds)</description>
+      <initValue>30</initValue>
+      <name>TIMEOUT</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Screenshot Path</description>
+      <initValue>'Reports/Screenshots/'</initValue>
+      <name>SCREENSHOT_PATH</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

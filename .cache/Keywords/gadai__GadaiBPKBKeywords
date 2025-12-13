@@ -1,0 +1,121 @@
+{
+  "keywordFileContentHash": "9408795529B8F2DA72C2DA465B728425",
+  "keywordClasses": [
+    {
+      "name": "gadai.GadaiBPKBKeywords",
+      "keywordMethods": [
+        {
+          "name": "createGadaiBPKBMobil",
+          "parameters": [
+            {
+              "name": "formData",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.util.Map",
+                "unresolvedClassName": "Map",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "navigateToGadaiBPKBForm",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "fillInformasiUsaha",
+          "parameters": [
+            {
+              "name": "usahaData",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.util.Map",
+                "unresolvedClassName": "Map",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "fillBuktiKepemilikan",
+          "parameters": [
+            {
+              "name": "kepemilikanData",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.util.Map",
+                "unresolvedClassName": "Map",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "fillDataNasabah",
+          "parameters": [
+            {
+              "name": "nasabahData",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.util.Map",
+                "unresolvedClassName": "Map",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "fillInformasiKendaraan",
+          "parameters": [
+            {
+              "name": "kendaraanData",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.util.Map",
+                "unresolvedClassName": "Map",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "submitForm",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "verifySubmissionSuccess",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
