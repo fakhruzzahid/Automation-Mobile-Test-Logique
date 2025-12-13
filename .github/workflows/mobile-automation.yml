@@ -6,12 +6,15 @@ on:
   pull_request:
     branches: [ main ]
   schedule:
-    - cron: '0 2 * * *'  # Run setiap hari jam 2 pagi
-  workflow_dispatch:  # Manual trigger
+    - cron: '0 2 * * *'
+  workflow_dispatch:
 
 jobs:
   mobile-test:
     runs-on: ubuntu-latest
+    
+    env:
+      SKIP_JDK_VERSION_CHECK: true
     
     steps:
       - name: Checkout code
@@ -25,18 +28,14 @@ jobs:
       
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
+        env:
+          SKIP_JDK_VERSION_CHECK: true
       
       - name: Install Katalon Studio
         run: |
-          wget https://github.com/katalon-studio/katalon-studio/releases/download/v9.7.2/Katalon_Studio_Engine_Linux_64-9.7.2.tar.gz
+          wget -q https://github.com/katalon-studio/katalon-studio/releases/download/v9.7.2/Katalon_Studio_Engine_Linux_64-9.7.2.tar.gz
           tar -xzf Katalon_Studio_Engine_Linux_64-9.7.2.tar.gz
           chmod +x katalonc
-      
-      - name: Verify Katalon Installation
-        run: |
-          ls -la
-          pwd
-          echo "Katalon installed successfully"
       
       - name: Run Mobile Test
         run: |
@@ -55,7 +54,3 @@ jobs:
           name: test-results
           path: Reports/
           retention-days: 30
-      
-      - name: Notify on Failure
-        if: failure()
-        run: echo "Mobile automation tests failed!"
