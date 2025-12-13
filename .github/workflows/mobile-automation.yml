@@ -24,16 +24,11 @@ jobs:
           distribution: 'temurin'
       
       - name: Run Katalon Tests
-        uses: katalon-studio/katalon-studio-github-action@v3
+        uses: katalon-studio/katalon-studio-github-action@v2
         with:
-          version: '9.7.2'
+          version: '8.6.5'
           projectPath: '${{ github.workspace }}'
-          args: >-
-            -retry=0
-            -testSuitePath="Test Suites/TS_All_FLow"
-            -executionProfile="default"
-            -browserType="Android"
-            -apiKey=${{ secrets.KATALON_API_KEY }}
+          args: '-retry=0 -testSuitePath="Test Suites/TS_All_FLow" -executionProfile="default" -browserType="Android" -apiKey=${{ secrets.KATALON_API_KEY }}'
       
       - name: Upload Test Results
         if: always()
