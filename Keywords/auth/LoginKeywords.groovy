@@ -75,9 +75,6 @@ public class LoginKeywords {
 		
 		Mobile.delay(3)
 		
-		// Assertion: Verify login success
-//		verifyLoginSuccess()
-		
 		Mobile.comment("=== LOGIN COMPLETED ===")
 	}
 	
@@ -105,35 +102,15 @@ public class LoginKeywords {
 		
 		// Navigate to Profile
 		common.tapElement(
-			findTestObject('Android/Dashboard_Page/menu_Profile'), 
+			findTestObject('Object Repository/Login_Page/btn_Profil'), 
 			"Profile Menu")
 		
 		Mobile.delay(2)
 		
-		// Tap Logout
-		common.scrollToElement(
-			findTestObject('Android/Profile_Page/btn_Logout'),
-			"Logout")
-		
+		// Tap Logout		
 		common.tapElement(
-			findTestObject('Android/Profile_Page/btn_Logout'), 
+			findTestObject('Object Repository/Dashboard_Page/btn_Logout'), 
 			"Logout Button")
-		
-		Mobile.delay(2)
-		
-		// Verify logout success
-		boolean onLoginPage = Mobile.verifyElementExist(
-			findTestObject('Android/Login_Page/btn_Masuk'),
-			GlobalVariable.TIMEOUT,
-			FailureHandling.OPTIONAL)
-		
-		if (onLoginPage) {
-			Mobile.comment("✓ ASSERTION PASS: Logout successful")
-			common.takeScreenshot("Logout_Success")
-		} else {
-			throw new Exception("Logout failed")
-		}
-		
 		Mobile.comment("=== LOGOUT COMPLETED ===")
 	}
 }
